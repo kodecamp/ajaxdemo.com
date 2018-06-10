@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Index Page</title>
+  <link rel="stylesheet" href="./styles/app.css">
+  <style type="text/css">
+  	
+  </style>
+</head>
+
+<body>
+  <a href="/" class="home">Home</a>
+  <p class="desc">
+    When a particular button is clicked
+  </p>
+  <ul style="width: 50%;margin: auto auto;list-style-type: lower-alpha;">
+  	<li>Data is fetched(Asynchronously)</li>
+  	<li>Part of page is updated</li>
+  </ul>
+  <p id="counter"></p>
+ 
+  <div class="data-container">
+	<div class="json-container data-box">
+		<button id="jsonBtn">Fetch JSON</button>
+		<div class="data" id="jsonContainer">
+			JSON data placeholder
+		</div>	
+	</div>
+
+	<div class="html-container data-box">
+		<button id="htmlBtn">Fetch HTML</button>
+		<div class="data" id="htmlContainer">
+			HTML Placeholder
+		</div>	
+	</div>
+
+	<div class="image-container data-box">
+		<button id="imageBtn">Fetch Image</button>
+		<div class="data" id="imageContainer">
+			
+			<img id="imagePlaceholder" src="./data/img-placeholder.svg">
+		</div>	
+	</div>
+  </div>
+  <script src="./scripts/counter.js"></script>
+  <script src="./scripts/fetch-data.js"></script>
+</body>
+
+</html>

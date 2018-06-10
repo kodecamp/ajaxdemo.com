@@ -1,0 +1,19 @@
+{
+  "people": [
+  {
+    "name": "Name 1",
+    "address": "Address 1"
+  },
+  {
+    "name": "Name 2",
+    "address": "Address 2"
+  },
+  {
+    "name": "Name 3",
+    "address": "Address 3"
+  },
+  {
+    "name": "Name 4",
+    "address": "Address 4"
+  }]
+}

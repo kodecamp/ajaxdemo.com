@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+a.home{
+  color: #161616;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  margin: auto auto;
+  padding: 8px;
+}
+
+.form-data {
+  width: 50%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed #2E7D32;
+  padding: 8px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.image-container {
+  width: 250px;
+  height: auto;
+  border: 2px dashed tomato;
+  min-height: 100px;
+  margin: auto auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.image-container img#imageToBeUploaded {
+  /* border-radius: 50%; */
+  
+}
+
+p.message-panel {
+  position: fixed;
+  left: 50%;
+  top: 16px;
+  transform: translateX(-50%);
+  padding: 8px;
+  width: 50%;
+  margin: 32px auto;
+  box-shadow: 0px 1px 2px 0px #161616;
+}
+
+.info {
+  background-color: #0077B5;
+  color: #fff;
+
+}
+
+.error {
+  background-color: #df2029;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+input[type=text] {
+  padding: 4px;
+  border: 1px solid gray;
+}
+
+p.desc {
+  text-align: center;
+  padding: 16px;
+  font-size: 2rem;
+  color: yellowgreen;
+}
+
+
+#counter {
+  font-weight: bold;
+  font-size: 2rem;
+  /*display: block;*/
+  padding: 16px;
+  margin: auto auto;
+  text-align: center;
+  color: tomato;
+}
+
+#dataContainer {
+  width: 50%;
+  margin: 16px auto;
+  text-align: center;
+  border: 2px dashed tomato;
+  padding: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+
+
+.btn-panel {
+  display: flex;
+}
+
+
+.data-container {
+  display: flex;
+}
+
+img {
+  width: 200px;
+}
+
+.data-box {
+  width: 300px;
+  flex-grow: 1;
+  margin: 8px;
+  border: 2px dashed tomato;
+  display: flex;
+  flex-direction: column;
+}
+
+.data {
+  text-align: center;
+}
+
+
+
+button {
+  display: block;
+  width: 50%;
+  padding: 8px;
+  margin: 32px auto;
+  border: none;
+  background-color: #2E7D32;
+  color: #fff;
+  border-radius: 5px;
+}
+
+button:hover {
+  box-shadow: 1px 1px 2px darkgray;
+  cursor: pointer;
+}
+
+ul li {
+  background-color: #000;
+  color: white;
+  padding: 16px;
+}
+
+ul li:nth-of-type(odd) {
+  background-color: #FFA725;
+  /*color: #161616;*/
+}
+
+ul li a {
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+}

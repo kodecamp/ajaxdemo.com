@@ -1,0 +1,44 @@
+(function() {
+  function submitForm() {
+    const formElement = document.querySelector('#form');
+    const formData = new FormData(formElement);
+    for (let entry of formData.entries()) {
+      console.log(`${entry[0]} : ${entry[1]}`);
+      console.dir(entry[1]);
+    }
+    const xhr = new XMLHttpRequest();
+    xhr.addEventListener('load', function(e) {
+      console.log('response received : ', xhr.response);
+      displayMessage(xhr);
+    });
+    xhr.open('POST', "http://ajaxwebapp.com/submit-form.php");
+    xhr.responseType = 'text';
+    xhr.send(formData);
+  }
+
+  function displayMessage(xhr) {
+    let msgClass = "";
+    const message = xhr.status === 200 ? (msgClass = "info", "Submitted Successfully.") : (msgClass = "error", "Something went wrong.");
+    console.log(msgClass);
+    console.log(message);
+    const msgPanel = document.querySelector('.message-panel');
+    msgPanel.textContent = message;
+    msgPanel.classList.remove('hide');
+    msgPanel.classList.add(msgClass);
+  }
+
+
+  function init() {
+    const submitBtn = document.querySelector('#submitBtn');
+    submitBtn.addEventListener('click', function(e) {
+      submitForm();
+    });
+
+    const msgPanel = document.querySelector('.message-panel');
+    msgPanel.addEventListener('dblclick', function(e) {
+      e.target.classList.add("hide");
+    });
+  }
+
+  init();
+})();
