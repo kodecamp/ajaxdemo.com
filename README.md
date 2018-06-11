@@ -1,3 +1,2 @@
 # ajaxdemo.com
-go to and clone or download the zip
-https://github.com/kodecamp/ajaxdemo.com
+clone this repo or download it as a zip
