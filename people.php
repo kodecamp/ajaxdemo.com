@@ -25,3 +25,7 @@ array_push($people, $person4);
 $dataObj = array("people" => $people);
 
 echo json_encode($dataObj);
+
+function test() {
+	echo "done";
+}

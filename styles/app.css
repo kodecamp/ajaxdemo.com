@@ -13,6 +13,15 @@ a {
   color: red;
 }
 
+.drop-down {
+  width: 50%;
+  margin: 64px auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed green;
+}
+
 a.home{
   color: #161616;
   font-size: 2rem;
